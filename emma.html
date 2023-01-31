@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-portfolio</title>
+    
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
+
+       div.circle {
+            width: 2em;
+            height: 2em;
+            background-color: red;
+            border-radius: .9em;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            padding: .9em;
+            background-color: rgb(236, 236, 53);
+        }
+
+        section.second-comp-1 {
+            display: flex;
+            width: 90%;
+            align-items: center;
+        }
+
+        section.second-comp-1 > h1 {
+            margin-left: .9em;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        section.second-comp-2 {
+            align-self: flex-end;
+            justify-self: end
+        }
+
+        /* level-2 stylings starts here  */
+        section.level-2 {
+            display: flex;
+            padding: .9em;
+        }
+
+        section.level-2 > section.profile-img-container {
+            margin-right: 2.2em;
+        }
+
+        section.level-2 > section.profile-details-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        section.level-2 > section.profile-img-container > img {
+            width: 13em;
+            height: 13em;
+            border-radius: 50%;
+        }
+
+        section.level-2 > section.profile-details-container > p {
+            display: flex;
+        }
+
+        section.level-2 > section.profile-details-container > p > span.detail-title {
+            width: 12em;
+            font-weight: bolder;
+            color: rgb(64, 153, 52);
+        }
+
+        section.level-2 > section.profile-details-container > p > span.detail-value {
+            color: rgb(26, 92, 167);
+        }
+
+        /* Level 3 styling starts here */
+        section.level-3 {
+            display: flex;
+        }
+
+        /* First child component design  */
+        section.level-3 section.first-child-component {
+            flex-grow: 2;
+            display: flex;
+            padding: .9em;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        section.level-3 section.first-child-component > div {
+            width: 18em;
+            margin: .9em;
+            height: 18em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: .9em;
+        }
+
+        section.level-3 section.first-child-component > div.green-child {
+            background-color: green;
+        }
+
+        section.level-3 section.first-child-component > div.yellow-child {
+            background-color: yellow;
+        }
+
+        section.level-3 section.first-child-component > div.yellow-child > p {
+            color: black;
+        }
+
+        section.level-3 section.first-child-component > div.purple-child {
+            background-color: purple;
+        }
+
+        section.level-3 section.first-child-component > div.red-child {
+            background-color: red;
+        }
+
+        section.level-3 section.first-child-component > div > p {
+            color: white;
+            font-size: 1.2em;
+        }
+
+        /* Layer 3 second child component styling  */
+        section.level-3 section.second-child-component {
+            border: 1px solid gray;
+            flex-grow: 1;
+            width: 35em;
+            margin-right: 3em;
+        }
+
+        section.level-3 section.second-child-component section.second-child-component-header {
+            background-color: brown;
+            padding: .9em;
+            display: flex;
+            justify-content: center;
+        }
+
+        section.level-3 section.second-child-component section.second-child-component-header h4 {
+            color: white;
+            font-size: .9em;
+        }
+
+        section.list-of-skills-container {
+            display: flex;
+        }
+
+        section.socials-component > ul, section.list-of-skills-container > ul {
+            margin-top: 1.2em;
+            margin-left: 2em;
+            height: 7em;
+            list-style-type: square;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        section.boxes-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.2em;
+        }
+
+        section.boxes-container > div {
+            height: 8em;
+            width: 8em;
+            margin: .3em;
+            border-radius: .7em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section.boxes-container > div.orange-child {
+            background-color: orange;
+        }
+
+        section.boxes-container > div.blue-child {
+            background-color: blue;
+        }
+
+        section.boxes-container > div.gold-child {
+            background-color: gold;
+        }
+
+        section.boxes-container > div.green-child {
+            background-color: greenyellow;
+        }
+
+        section.boxes-container > div > p { color: white; }
+
+
+        /* Social links container styling starts here */
+        section.socials-component {
+            margin-top: 2em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section.socials-component > ul {
+            height: 3.5em;
+        }
+
+        section.socials-component > h4 {
+            align-self: center;
+            text-decoration: underline;
+        }
+
+
+        footer {
+            padding: 1.5em;
+            background-color: rgb(42, 125, 173);
+            margin-top: .9em;
+        }
+
+        footer p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="second-comp-1">
+            <div class="circle"></div>
+            <h1>EmmaCodec</h1>
+        </section>
+        <section class="second-comp-2">
+            <div class="circle"></div>
+        </section>
+    </header>
+
+    <!-- Second layer  -->
+    <section class="level-2">
+        <!-- profile image  -->
+
+        <section class="profile-img-container">
+            <img src="./IMG_20220501_072914_962.jpg" class="profile-pic" />
+        </section>
+
+        <!-- profile details  -->
+        <section class="profile-details-container">
+            <p><span class="detail-title">Full Name:</span> <span class="detail-value">Julian Adrian</span></p>
+            <p><span class="detail-title">Phone Number:</span> <span class="detail-value">+1134567</span></p>
+            <p><span class="detail-title">Country:</span> <span class="detail-value">USA</span></p>
+            <p><span class="detail-title">State:</span> <span class="detail-value">Detroit</span></p>
+        </section>
+    </section>
+
+    <!-- Third layer -->
+    <section class="level-3">
+        <!-- First child component -->
+        <section class="first-child-component">
+            <div class="green-child"><p>Green</p></div>
+            <div class="yellow-child"><p>Yellow</p></div>
+            <div class="purple-child"><p>Purple</p></div>
+            <div class="red-child"><p>Red</p></div>
+        </section>
+
+        <!-- Second child component -->
+        <section class="second-child-component">
+            <!-- Second child component header  -->
+            <section class="second-child-component-header">
+                <h4>Skills</h4>
+            </section>
+
+            <!-- List of skills container -->
+            <section class="list-of-skills-container">
+                <ul class="skills-list">
+                    <li>Programming</li>
+                    <li>Drumming</li>
+                    <li>Singing</li>
+                    <li>Dancing</li>
+                </ul>
+            </section>
+
+            <!-- Boxes container -->
+            <section class="boxes-container">
+                <div class="orange-child"><p>Orange</p></div>
+                <div class="blue-child"><p>Blue</p></div>
+                <div class="gold-child"><p>Gold</p></div>
+                <div class="green-child"><p>Green</p></div>
+            </section>
+
+            <!-- Socials component -->
+            <section class="socials-component">
+                <h4>Important links</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/daniel-emmanuel-924564236">Linkedin</a></li>
+                    <li><a href="https://www.github.com/emmacodec">Github</a></li>
+                </ul>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; EmmaCodec 2022</p>
+    </footer>
+</body>
+</html>
