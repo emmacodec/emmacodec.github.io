@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wowwwww</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family:Georgia, 'Times New Roman', Times, serif
+        }
+         /* Level 3 styling starts here */
+         section.level-3 {
+            display: flex;
+            -webkit-animation: animate 15s infinite alternate;
+        }
+        @-webkit-keyframes animate{
+            50%{
+                color: yellow;
+                
+        }
+    }
+    
+
+         
+           /* First child component design  */
+        section.level-3 section.first-child-component {
+            flex-grow: 2;
+            display: flex;
+            padding: .9em;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: rgb(206, 187, 141);
+        }
+
+        section.level-3 section.first-child-component > div {
+            width: 18em;
+            margin: .9em;
+            height: 18em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: .9em;
+            color: rgb(156, 52, 13);
+        }
+        section.level-3 section.first-child-component > div.chat-child{
+            background-color: blue;
+        }
+        section.level-3 section.first-child-component > div.web-child{
+            background-color: wheat;
+        }
+        section.level-3 section.first-child-component > div.game-child{
+            background-color: gray;
+        }
+        section.level-3 section.first-child-component > div.text-child{
+            background-color: white;
+        }
+        section.level-3 section.first-child-component > div.java-child{
+            background-color: orchid;
+        }
+        section.level-3 section.first-child-component > div.data-child{
+            background-color: aqua;
+        }
+
+
+
+ 
+
+  
+    </style>
+</head>
+<body>
+     <!-- Third layer -->
+     <section class="level-3">
+        <!-- First child component -->
+        <section class="first-child-component">
+            <div class="chat-child"><p>Chat bots</p></div>
+            <div class="web-child"><p>Web-design</p></div>
+            <div class="game-child"><p>Game-design</p></div>
+            <div class="text-child"><p>Text-Analysis</p></div>
+            <div class="java-child"><p>Javascript</p></div>
+            <div class="data-child"><p>Data-Privacy</p></div>
+
+        </section>
+
+
+</body>
+</html>
