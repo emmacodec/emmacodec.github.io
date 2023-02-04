@@ -14,13 +14,7 @@
          /* Level 3 styling starts here */
          section.level-3 {
             display: flex;
-            -webkit-animation: animate 15s infinite alternate;
-        }
-        @-webkit-keyframes animate{
-            50%{
-                color: yellow;
-                
-        }
+            
     }
     
 
@@ -47,29 +41,156 @@
         }
         section.level-3 section.first-child-component > div.chat-child{
             background-color: blue;
+            -webkit-animation: colorchange 30s linear infinite;
         }
         section.level-3 section.first-child-component > div.web-child{
             background-color: wheat;
+            -webkit-animation: colorchange 25s linear infinite;
         }
         section.level-3 section.first-child-component > div.game-child{
             background-color: gray;
+            -webkit-animation: colorchange 20s linear infinite;
         }
         section.level-3 section.first-child-component > div.text-child{
             background-color: white;
+            -webkit-animation: colorchange 15s linear infinite;
         }
         section.level-3 section.first-child-component > div.java-child{
             background-color: orchid;
+            -webkit-animation: colorchange 10s linear infinite;
         }
         section.level-3 section.first-child-component > div.data-child{
             background-color: aqua;
+            -webkit-animation: colorchange 5s linear infinite;
         }
+        @-webkit-keyframes colorchange{
+            0%{
+                background-color: yellow;
+            }
+            25%{
+                background-color: blue;
+            }
+            50%{
+                background-color: blue;
+            }
+            75%{
+                background-color: blue;
+            }
+            100%{
+                background-color: blue;
+            }
+            125%{
+                background-color: blue;
+            }
+        }
+         @-webkit-keyframes colorchange{
+            0%{
+                background-color: wheat;
+            }
+            25%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: wheat;
+            }
+            75%{
+                background-color: wheat;
+            }
+            100%{
+                background-color: wheat;
+            }
+            125%{
+                background-color: wheat;
+            }
+        }
+         @-webkit-keyframes colorchange{
+            0%{
+                background-color: gray;
+            }
+            25%{
+                background-color: gray;
+            }
+            50%{
+                background-color: yellow;
+            }
+            75%{
+                background-color: gray;
+            }
+            100%{
+                background-color: gray;
+            }
+            125%{
+                background-color: gray;
+            }
+        }
+         @-webkit-keyframes colorchange{
+            0%{
+                background-color: white;
+            }
+            25%{
+                background-color: white;
+            }
+            50%{
+                background-color: white;
+            }
+            75%{
+                background-color: yellow;
+            }
+            100%{
+                background-color: white;
+            }
+            125%{
+                background-color: white;
+            }
+        }
+         @-webkit-keyframes colorchange{
+            0%{
+                background-color: orchid;
+            }
+            25%{
+                background-color: orchid;
+            }
+            50%{
+                background-color: orchid;
+            }
+            75%{
+                background-color: orchid;
+            }
+            100%{
+                background-color: yellow;
+            }
+            125%{
+                background-color: orchid;
+            }
+        }
+         @-webkit-keyframes colorchange{
+            0%{
+                background-color: aqua;
+            }
+            25%{
+                background-color: aqua;
+            }
+            50%{
+                background-color: aqua;
+            }
+            75%{
+                background-color: aqua;
+            }
+            100%{
+                background-color: aqua;
+            }
+            125%{
+                background-color: yellow;
+            }
+        }
+        
 
 
 
  
 
-  
-    </style>
+
+ </style>
 </head>
 <body>
      <!-- Third layer -->
