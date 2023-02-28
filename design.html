@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glass-website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            min-height: 100vh;
+            background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .glass{
+           display: flex;
+            background: white;
+            min-height: 80vh;
+            width: 60%;
+            background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+            border-radius: 2rem;
+            z-index: 2;
+            backdrop-filter: blur(2rem);
+            
+        }
+        .cirlce-1,.circle-2{
+            background: white;
+            background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+            height: 20rem;
+            width: 20rem;
+            position: absolute;
+            border-radius: 50%;
+            
+        }
+        .cirlce-1{
+            top: 5%;
+            right: 15%;
+            
+        }
+        .circle-2{
+            bottom: 5%;
+            left: 15%;
+        }
+        .dashboard{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+            border-radius: 2rem;
+
+        }
+        
+        .user img{
+        border-radius: 50%;
+        height: 15rem;
+        width: 15rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .link img {
+        margin-bottom: 2rem;
+        border-radius: 50%;
+        height: 15rem;
+        width: 15rem;
+        align-items: center;
+        justify-content: center;
+ 
+    }
+    button{
+        background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+            border-radius: 2rem; 
+            color: rgba(185, 41, 154, 0.63);
+            width: 15rem;
+            height: 15rem;
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 2rem;
+    }
+    .games {
+        display: flex;
+        min-height: 80vh;
+        width: 60%;
+        background: linear-gradient(to right top,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+        border-radius: 2rem;
+        backdrop-filter: blur(4rem);
+        flex-grow: 1;
+        margin-top: 50%;
+        margin-left: 50%;
+        height: 50%;
+        flex-flow: column;
+        
+        
+    }
+
+    .cards {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-evenly;
+        background: linear-gradient(to right left,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+        flex-grow: 1;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        height: 1.2rem;
+        
+        
+        
+        
+    }
+
+    .card img{
+        margin-bottom: 2rem;
+        border-radius: 50%;
+        height: 15rem;
+        width: 15rem;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+        display: flex;
+
+    }
+    
+    
+
+    
+    
+</style>
+</head>
+<body>
+    <main>
+        <section class="glass">
+            <div class="dashboard">
+                <div class="user">
+                    <img src="./IMG_20220501_072914_962.jpg" alt="" />
+                    <h1>Emmanuel Daniel</h1>
+                    <p>Pro Member</p>
+                </div>
+                <div class="links">
+                    <div class="link">
+                        <img src="./a05cb0e61ba7f11aeefdd36fee6a261a.jpg" alt="" />
+                        <h2>Streams</h2>
+                    </div>
+                    <div class="links">
+                        <div class="link">
+                            <img src="./28adff5e59f69f0d428520cb0734d502.jpg" alt="" />
+                            <h2>Games</h2>
+                        </div>
+                        <div class="links">
+                            <div class="link">
+                                <img src="./a05cb0e61ba7f11aeefdd36fee6a261a.jpg" alt="" />
+                                <h2>New</h2>
+                            </div>
+                            <div class="links">
+                                <div class="link">
+                                    <img src="./28adff5e59f69f0d428520cb0734d502.jpg" alt="" />
+                                    <h2>Library</h2>
+                                </div>
+                </div>
+            </div>
+            <div class="pro">
+                <button type="pro"><span></span>Join pro for free games.</button>
+                
+            </div>
+           
+           
+            <div class="games">
+                <div class="status">
+                    <h1>Active Games</h1>
+                    <input type="text" />
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./a05cb0e61ba7f11aeefdd36fee6a261a.jpg" alt="" />
+                        <div class="card-info">
+                            <h2>Assassins Creed Valhalla</h2>
+                            <p>PSS Version</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="percentage">60%</h2>
+                    </div>
+                    <div class="card">
+                        <img src="./28adff5e59f69f0d428520cb0734d502.jpg" alt="" />
+                        <div class="card-info">
+                            <h2>Assassins Creed Valhalla</h2>
+                            <p>PSS Version</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="percentage">40%</h2>
+                    </div> 
+                    <div class="card">
+                        <img src="./5be06cb71b4944b18b2b098fd07ee3d3.jpg" alt="" />
+                        <div class="card-info">
+                            <h2>Assassins Creed Valhalla</h2>
+                            <p>PSS Version</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="percentage">15%</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+</body>
+</html>
