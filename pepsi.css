@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+section.pepsi
+{
+    display: flex;
+    background: #004380 ;
+}
+section.pepsi > section.pep
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004380;
+    transition: 0.5%;
+}
+header
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

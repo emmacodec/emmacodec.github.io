@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Buggatti website</title>
+    <link rel="stylesheet" a href="./buggatti.css" />
+</head>
+<body>
+    <section class="main">
+        <header>
+            <a href="#"><img src="./827956cc47a6f71a9f0bb9c912665b3c.jpg" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="#">Top Features</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">stores</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h2>Ready To <span>Race</span></h2>
+            <a href="#" class="bts">Ride Now</a>
+            <img src="./0a27d06ae540968d14f1dc59f077f6a2.jpg" class="buggatti">
+        </div>
+        
+        <!--slider content-->
+        <div class="slider">
+            <div class="slides active">
+                <h2><span>Engine</span>789 cc</h2>
+                <h2><span>Max speed</span>1034 kmph</h2>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <h2><span>Mileage</span>25 kmpi</h2>
+                <h2><span>0-100</span>20 seconds</h2>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <h2><span>wheel</span>22 inch Alloy</h2>
+                <h2><span>Tyre-type</span>Tubeless</h2>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="sci">
+                <li><a href="https://www.linkedin.com/in/daniel-emmanuel-924564236">Linkedin</a></li>
+                    <li><a href="https://www.github.com/emmacodec">Github</a></li>
+                    <li><a href="https:www.facebook.com/profile.php?id=100037149882981">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+    <script>
+        const slides=document.querySelectorAll('.slides');
+        const dots=document.querySelectorAll('.dots');
+
+        function setActive(i) {
+            for (slide of slides)
+            slide.classList.remove('active');
+            slides[i].classList.add('active');
+            for (dot of dots)
+            dot.classList.remove('active');
+            dots[i].classList.add('active');
+ 
+        }
+
+        for (let i=0; i < dots.length; i++) {
+            dots[i].addEventListener('click', function() {
+              setActive(i)
+            });
+        };
+
+
+    </script>
+</body>
+</html>
