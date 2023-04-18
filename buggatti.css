@@ -29,7 +29,7 @@
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,50%);
+    text-align: center;
     font-size: 26vw;
     font-weight: 700;
     color: rgba(225, 225, 225, 0.45);
@@ -170,6 +170,7 @@ footer
     padding: 0px 100px;
     opacity: 0;
     pointer-events: none;
+    margin: 20px;
 }
 .slider .slides.active
 {

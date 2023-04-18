@@ -1,34 +1,163 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
 }
-section.pepsi
+html 
 {
-    display: flex;
-    background: #004380 ;
-}
-section.pepsi > section.pep
-{
-    position: relative;
+    background-color: #004380;
     width: 100%;
     height: 100%;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #004380;
-    transition: 0.5%;
+    padding: 20px 100px;
 }
-header
+section.pep
 {
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 20px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
+header
+{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.pep ul
+{
+    display: flex;
+}
+section.pep ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+section.pep ul li
+{
+    text-decoration: none;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+section.pep ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;  
+}
+section.pep ul li::after
+{
+    width: 100%;
+    color: #fff;
+}
+section.pep ul li:hover
+{
+    color: gold;
+}
+
+/*text and image styling starts here*/
+section.container
+{
+    display: flex;
+}
+section.container > section.text-container
+{
+    min-height: 30em;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20%;
+    
+}
+section.container > section.text-container > h2
+{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+section.container > section.text-container > span
+{
+    font-size: 3em;
+    font-weight: 1000;
+    color: white;
+}
+section.container > section.text-container > p
+{
+    font-size: .6em;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+button
+{
+    padding: 10px;
+    border-radius: 2em;
+    background: white;
+    color: black;
+    font-size: .9em;
+    border: none;
+    font-weight: bold;
+    margin: 8px;
+}
+section.container > section.img-container > img
+{
+    min-height: 30em;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.container > section.img-container > img
+{
+    width: 80% !important;
+    margin: 20%;
+}
+
+/*footer*/
+footer{
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(230, 230, 37, 0.849);
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 10px;
+    color: rgb(63, 214, 49);
+}
+footer ul li a img {
+    filter: invert(1);
+    max-width: 40px;
+}
+
+
+
